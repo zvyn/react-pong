@@ -1,0 +1,55 @@
+.Pong .App {
+  overflow: hidden;
+  height: 100%;
+}
+
+.Bat {
+  display: inline-block;
+  background-color: white;
+  height: 200px;
+  width: 15px;
+  position: absolute;
+  margin-top: -6em;
+}
+
+.Bat-right {
+  border-left: solid black;
+  right: 0;
+}
+
+.Bat-left {
+  border-right: solid black;
+}
+
+.Ball {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 40px;
+  width: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border: solid white;
+  border-radius: 3em;
+  position: fixed;
+}
+
+.Pong-horizontal-border {
+  position: fixed;
+  height: 1px;
+  background-color: gray;
+  width: 100%;
+}
+
+.Pong-score {
+  text-align: center;
+  color: green;
+  font-size: large;
+}
+
+.Pong-score::before {
+  content: "Score: ";
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
